@@ -3,7 +3,9 @@ def encode(number_string: str) -> str:
 	for number in number_string:
 		add_to_output = int(number)
 		add_to_output += 3
-		add_to_output = add_to_output % 9
+		if add_to_output > 9:
+			add_to_output = add_to_output % 9
+			add_to_output -= 1
 		output += str(add_to_output)
 	return output
 def main():
