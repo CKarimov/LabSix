@@ -7,7 +7,7 @@ menu = ("Menu\n"
 
 password = ""
 
-
+# Caleb Karimov
 # Encoder function (Shifts each number by 3)
 def encode(number_string: str) -> str:
 	output = ""
@@ -28,7 +28,7 @@ def decode(encoded_sequence):
         decoded_sequence += decoded_digit
     return int(decoded_sequence)
 
-
+# Caleb Karimov
 # Main function
 def main():
 	while True:
