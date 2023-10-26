@@ -20,10 +20,13 @@ def encode(number_string: str) -> str:
 		output += str(add_to_output)
 	return output
 
-
-# Decoder function (Undoes encoder function)
-def decode(encoded_string: str) -> str:
-	pass
+# Matthew Khan
+def decode(encoded_sequence):
+    decoded_sequence = ""
+    for digit in str(encoded_sequence):
+        decoded_digit = str((int(digit) - 3) % 10)  # Ensure the result stays a single digit (0-9)
+        decoded_sequence += decoded_digit
+    return int(decoded_sequence)
 
 
 # Main function
