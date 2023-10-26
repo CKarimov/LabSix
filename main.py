@@ -1,3 +1,4 @@
+# Menu that is printed in main loop to show options
 menu = ("Menu\n"
 		"-------------\n"
 		"1. Encode\n"
@@ -7,6 +8,7 @@ menu = ("Menu\n"
 password = ""
 
 
+# Encoder function (Shifts each number by 3)
 def encode(number_string: str) -> str:
 	output = ""
 	for number in number_string:
@@ -19,12 +21,13 @@ def encode(number_string: str) -> str:
 	return output
 
 
+# Decoder function (Undoes encoder function)
 def decode(encoded_string: str) -> str:
 	pass
 
 
+# Main function
 def main():
-
 	while True:
 		print(menu)
 		selection = input("Please enter an option: ")
